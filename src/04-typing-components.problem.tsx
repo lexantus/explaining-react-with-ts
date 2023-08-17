@@ -1,0 +1,13 @@
+import React from 'react';
+
+export const Button = ({ className, ...rest }: React.ComponentProps<"button">) => {
+    return <button {...rest} className={`default-classname ${className}`}></button>
+}
+
+const Parent = () => {
+    return (
+        <>
+        <Button onClick={() => {}} resource='' type='button'></Button>
+        </>
+    );
+}
